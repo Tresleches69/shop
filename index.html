@@ -399,6 +399,31 @@
     <footer>
         <p>&copy; 2024 Mason's Barber Shop. All rights reserved.</p>
     </footer>
+    <!-- Booking Modal -->
+<div id="bookingModal" class="modal">
+    <div class="modal-content">
+        <button class="close-button">&times;</button>
+        <h2>Book Appointment</h2>
+        <div class="calendar">
+            <div class="calendar-header">
+                <button id="prevMonth">&lt;</button>
+                <h3 id="currentMonth">December 2024</h3>
+                <button id="nextMonth">&gt;</button>
+            </div>
+            <div class="calendar-grid">
+                <div class="weekday-header">Sun</div>
+                <div class="weekday-header">Mon</div>
+                <div class="weekday-header">Tue</div>
+                <div class="weekday-header">Wed</div>
+                <div class="weekday-header">Thu</div>
+                <div class="weekday-header">Fri</div>
+                <div class="weekday-header">Sat</div>
+            </div>
+            <div class="selected-date"></div>
+            <div class="time-slots"></div>
+        </div>
+    </div>
+</div>
 <script>
     // Available dates (you can modify this based on your actual availability)
     const availableDates = [
